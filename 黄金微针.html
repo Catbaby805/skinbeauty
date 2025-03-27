@@ -1,0 +1,229 @@
+黄金微针
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黄金微针专业抗衰 - 时光美学中心</title>
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --dark: #2A2A2A;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+
+        /* 头部 */
+        .gold-header {
+            background: linear-gradient(rgba(0,0,0,0.7), url('microneedling-bg.jpg') center/cover;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header-content {
+            max-width: 800px;
+            padding: 20px;
+        }
+        .header-title {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .gold-badge {
+            background: var(--gold);
+            padding: 10px 30px;
+            border-radius: 30px;
+            display: inline-block;
+            margin: 20px 0;
+        }
+
+        /* 技术原理 */
+        .tech-section {
+            padding: 80px 20px;
+            background: #f9f9f9;
+        }
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .tech-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .tech-icon {
+            font-size: 40px;
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        /* 对比效果 */
+        .comparison-section {
+            padding: 80px 20px;
+            background: var(--dark);
+            color: white;
+        }
+        .comparison-slider {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            height: 500px;
+            background: url('before.jpg') center/cover;
+        }
+        .after-image {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            background: url('after.jpg') center/cover;
+            border-right: 3px solid var(--gold);
+        }
+
+        /* 价格套餐 */
+        .pricing-section {
+            padding: 80px 20px;
+        }
+        .price-table {
+            max-width: 800px;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        .price-table th, 
+        .price-table td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        .price-table th {
+            background: var(--gold);
+            color: white;
+        }
+
+        /* 预约条 */
+        .cta-bar {
+            background: var(--dark);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .cta-button {
+            background: var(--gold);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .header-title {
+                font-size: 2rem;
+            }
+            .tech-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <!-- 加载字体图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header class="gold-header">
+        <div class="header-content">
+            <div class="gold-badge">黄金抗衰技术</div>
+            <h1 class="header-title">黄金微针射频疗法</h1>
+            <p>三层立体抗衰 · 精准定点激活 · 长效胶原再生</p>
+        </div>
+    </header>
+
+    <!-- 技术原理 -->
+    <section class="tech-section">
+        <div class="tech-grid">
+            <div class="tech-card">
+                <i class="tech-icon fas fa-microscope"></i>
+                <h3>双模作用机制</h3>
+                <p>微针物理刺激 + 射频热能效应<br>同步激活皮肤自我修复系统</p>
+            </div>
+            <div class="tech-card">
+                <i class="tech-icon fas fa-layer-group"></i>
+                <h3>三层修复系统</h3>
+                <p>表皮重建 · 真皮重塑 · 筋膜层提升<br>0.5-3.5mm深度精准调节</p>
+            </div>
+            <div class="tech-card">
+                <i class="tech-icon fas fa-shield-alt"></i>
+                <h3>安全保障</h3>
+                <p>智能温控系统<br>医用级黄金涂层微针<br>ISO13485国际认证</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 效果对比 -->
+    <section class="comparison-section">
+        <h2>治疗效果对比</h2>
+        <div class="comparison-slider">
+            <div class="after-image"></div>
+        </div>
+        <div class="comparison-labels">
+            <span>治疗前</span>
+            <span>3次治疗后</span>
+        </div>
+    </section>
+
+    <!-- 价格套餐 -->
+    <section class="pricing-section">
+        <h2>疗程方案</h2>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>疗程类型</th>
+                    <th>建议次数</th>
+                    <th>单次价格</th>
+                    <th>套餐优惠</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>基础嫩肤</td>
+                    <td>3次</td>
+                    <td>¥1280</td>
+                    <td>套餐价 ¥3580</td>
+                </tr>
+                <tr>
+                    <td>深度抗衰</td>
+                    <td>5次</td>
+                    <td>¥1680</td>
+                    <td>套餐价 ¥7980</td>
+                </tr>
+                <tr>
+                    <td>疤痕修复</td>
+                    <td>6次</td>
+                    <td>¥1880</td>
+                    <td>套餐价 ¥9880</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 行动号召 -->
+    <div class="cta-bar">
+        <h3>立即预约免费皮肤检测</h3>
+        <p>专业医师1对1定制方案</p>
+        <a href="#contact" class="cta-button">立即咨询</a>
+    </div>
+</body>
+</html>
