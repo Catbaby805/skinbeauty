@@ -1,0 +1,166 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>肌顏美容中心</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+
+        /* 导航栏 */
+        nav {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            color: #e63946;
+            font-weight: bold;
+        }
+
+        /* 首页大图 */
+        .hero {
+            background: url('https://picsum.photos/1920/800') center/cover;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* 服务区块 */
+        .services {
+            padding: 50px 20px;
+            background: #f8f9fa;
+        }
+
+        .service-card {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* 预约表单 */
+        .booking {
+            padding: 50px 20px;
+            background: #ffe5ec;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #e63946;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        /* 联系方式 */
+        footer {
+            background: #333;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .service-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">肌顏美容</div>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h1>遇见更美的自己</h1>
+            <p>专业护理 · 定制服务 · 舒适体验</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>热门服务</h2>
+        <div class="service-container">
+            <div class="service-card">
+                <h3>基础护肤</h3>
+                <p>深层清洁+补水护理</p>
+                <p>时长：60分钟</p>
+                <p>$298</p>
+            </div>
+            <div class="service-card">
+                <h3>黄金微针</h3>
+                <p>抗衰紧致+毛孔修复</p>
+                <p>时长：90分钟</p>
+                <p>$1980</p>
+            </div>
+            <div class="service-card">
+                <h3>全身SPA</h3>
+                <p>精油按摩+淋巴排毒</p>
+                <p>时长：120分钟</p>
+                <p>$598</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking">
+        <h2>快速预约</h2>
+        <form>
+            <input type="text" placeholder="您的姓名" required>
+            <input type="tel" placeholder="联系电话" required>
+            <select>
+                <option>选择服务项目</option>
+                <option>基础护肤</option>
+                <option>黄金微针</option>
+                <option>全身SPA</option>
+            </select>
+            <input type="datetime-local" required>
+            <button>立即预约</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>地址：荃灣沙咀道328號寶石大厦328廣場地下G22舖</p>
+        <p>电话：8482 3101/ 5118 8680</p>
+        <p>营业时间：10:00-21:00（全年无休）</p>
+    </footer>
+</body>
+</html>
